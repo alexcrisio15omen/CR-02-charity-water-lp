@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate to Clean Water Projects</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Donation page specific styling */
+    .donation-container {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 40px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .donation-container h1 {
+      font-size: 2.2rem;
+      color: #0b3c6f;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .donation-container p {
+      color: #555;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    /* Donation form styling */
+    .donation-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Form group for better organization */
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Form labels */
+    .donation-form label {
+      font-weight: bold;
+      color: #0b3c6f;
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+
+    /* Form inputs */
+    .donation-form input {
+      padding: 12px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+      transition: border-color 0.3s;
+    }
+
+    .donation-form input:focus {
+      outline: none;
+      border-color: #ffc400;
+    }
+
+    /* Radio button group for donation amounts */
+    .amount-group {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .amount-button {
+      flex: 1;
+      min-width: 100px;
+      padding: 12px;
+      border: 2px solid #e0e0e0;
+      background: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #333;
+      transition: all 0.3s;
+    }
+
+    .amount-button:hover {
+      border-color: #ffc400;
+    }
+
+    .amount-button.selected {
+      background-color: #ffc400;
+      border-color: #ffc400;
+      color: #0b3c6f;
+    }
+
+    /* Donation submit button */
+    .donation-form .btn {
+      background-color: #ffc400;
+      color: #0b3c6f;
+      padding: 16px;
+      font-size: 1.1rem;
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Impact section */
+    .impact-section {
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .impact-section h3 {
+      color: #0b3c6f;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    .impact-item {
+      margin: 10px 0;
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 600px) {
+      .donation-container {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .donation-container h1 {
+        font-size: 1.8rem;
+      }
+
+      .amount-group {
+        flex-direction: column;
+      }
+
+      .amount-button {
+        min-width: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">CleanWater</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#problem">Our Work</a></li>
+      <li><a href="index.html#solution">Impact</a></li>
+      <li><a href="donate.html">Donate</a></li>
+    </ul>
+  </nav>
+
+  <!-- DONATION PAGE -->
+  <div class="donation-container">
+    <h1>Support Clean Water Projects</h1>
+    <p>Your donation provides clean, safe water to communities in need. 100% of your contribution goes directly to building sustainable water systems.</p>
+
+    <!-- Impact information -->
+    <div class="impact-section">
+      <h3>Your Impact</h3>
+      <div class="impact-item">💧 $25 brings clean water to one family</div>
+      <div class="impact-item">🚰 $100 helps install a community well</div>
+      <div class="impact-item">🌍 $500 builds a complete water system</div>
+    </div>
+
+    <!-- Donation form -->
+    <form class="donation-form" action="#" method="POST">
+      <!-- Choose donation amount -->
+      <label style="margin-bottom: 15px; font-weight: bold;">Select Amount:</label>
+      <div class="amount-group">
+        <button type="button" class="amount-button" data-amount="25">$25</button>
+        <button type="button" class="amount-button" data-amount="50">$50</button>
+        <button type="button" class="amount-button" data-amount="100">$100</button>
+        <button type="button" class="amount-button" data-amount="500">$500</button>
+      </div>
+
+      <!-- Custom amount input -->
+      <div class="form-group">
+        <label for="custom-amount">Custom Amount (USD):</label>
+        <input type="number" id="custom-amount" name="custom-amount" placeholder="Enter custom amount" min="1" step="0.01">
+      </div>
+
+      <!-- Donor information -->
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="btn">Continue to Payment</button>
+    </form>
+  </div>
+
+  <script>
+    // Handle amount button selection
+    const amountButtons = document.querySelectorAll('.amount-button');
+    const customAmountInput = document.getElementById('custom-amount');
+
+    // Add click event to each amount button
+    amountButtons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // Remove selected class from all buttons
+        amountButtons.forEach(btn => btn.classList.remove('selected'));
+
+        // Add selected class to clicked button
+        this.classList.add('selected');
+
+        // Update custom amount input
+        customAmountInput.value = this.getAttribute('data-amount');
+      });
+    });
+
+    // Clear button selection when custom amount is entered
+    customAmountInput.addEventListener('input', function() {
+      if (this.value) {
+        amountButtons.forEach(btn => btn.classList.remove('selected'));
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support a Project</title>
+  
+  <style>
+    /* Reset all default margins and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Style the body - full height and centered */
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Container for the button */
+    .button-container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Main support button styling */
+    .support-btn {
+      /* Text styling */
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+      letter-spacing: 1px;
+
+      /* Button appearance */
+      background-color: #ffc400;
+      border: none;
+      padding: 20px 50px;
+      border-radius: 50px;
+      cursor: pointer;
+
+      /* Shadow and effects */
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+
+      /* Remove default button styling */
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    /* Button hover effect - gets bigger and darker */
+    .support-btn:hover {
+      background-color: #ffb000;
+      transform: translateY(-4px);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Button active effect - when clicked */
+    .support-btn:active {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Responsive design for mobile devices */
+    @media (max-width: 600px) {
+      .support-btn {
+        font-size: 1rem;
+        padding: 16px 40px;
+      }
+
+      body {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Button container for centering -->
+  <div class="button-container">
+    <!-- Support button that links to donation page -->
+    <a href="donate.html" class="support-btn">
+      Support a Project
+    </a>
+  </div>
+</body>
+</html>

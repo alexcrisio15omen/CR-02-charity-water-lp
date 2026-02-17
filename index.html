@@ -1,47 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clean Water Impact</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">CleanWater</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#problem">Our Work</a></li>
+      <li><a href="#solution">Impact</a></li>
+      <li><a href="donate.html">Donate</a></li>
+    </ul>
+  </nav>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
+  <!-- HERO: Full-width background image with overlay -->
+  <section class="hero" style="background-image: url('img/drilling-team.jpg')">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Clean Water Changes Lives</h1>
+      <p>Building sustainable water systems for communities in need</p>
+      <a href="donate.html" class="btn">Support a Project</a>
+    </div>
+  </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+  <!-- PROBLEM SECTION: Dirty water images side-by-side -->
+  <section class="problem scroll-animate" id="problem">
+    <div class="problem-content">
+      <div class="problem-text">
+        <h2>The Challenge</h2>
+        <p>Millions lack access to clean, safe water. Contaminated sources lead to illness, missed school days, and lost productivity. Communities deserve better.</p>
+      </div>
+      <div class="problem-images">
+        <img src="img/dirty-water-1.jpg" alt="Community collecting water from unsafe source">
+        <img src="img/dirty-water-2.jpg" alt="Contaminated water in buckets">
+      </div>
+    </div>
+  </section>
+
+  <!-- REALITY SECTION: The daily struggle -->
+  <section class="reality scroll-animate">
+    <div class="reality-content">
+      <img src="img/Snapchat-2096862759.jpg" alt="Child carrying water container on head - illustrating daily water collection struggle" class="reality-image">
+      <div class="reality-text">
+        <h2>This Is Their Daily Reality</h2>
+        <p>Children like this spend hours each day collecting water. Water that's often contaminated and causes illness. Instead of going to school, playing, or building a future, they're spending their childhood hauling water.</p>
+        <p>Every donation helps end this cycle and gives children the chance to be just that—children.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTION SECTION: Clean water tap image with text -->
+  <section class="solution scroll-animate" id="solution">
+    <div class="solution-content">
+      <img src="img/clean-water-tap.jpg" alt="Fresh clean water flowing from new installation" class="solution-image">
+      <div class="solution-text">
+        <h2>Our Solution</h2>
+        <p>We drill wells and install water systems that provide reliable access to clean water. Each project is built with the community, ensuring long-term sustainability and local ownership.</p>
+        <p>Our teams work to create lasting change—not just temporary relief.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials scroll-animate">
+    <img src="img/additional-image.jpg" alt="Hands holding glasses of contaminated vs clean water showing the contrast" class="testimonials-header-image">
+    <h2>Real Impact, Real Stories</h2>
+
+    <div class="testimonial-container">
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"</div>
+        <p>Your $50 donation funded the materials for our community's well. Today, 200 families have clean water. My children haven't been sick since installation.</p>
+        <h4>— Maria, Mother of Four • Uganda</h4>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"</div>
+        <p>I was skeptical about donating, but seeing exactly where my $100 went changed everything. The water system in this village is transforming lives every single day.</p>
+        <h4>— Thomas, Monthly Donor • USA</h4>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"</div>
+        <p>Before the well, girls missed school 30% of the time gathering water. With your support, attendance increased to 95%. Education is now possible for our children.</p>
+        <h4>— James, School Director • Kenya</h4>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"</div>
+        <p>$200 doesn't seem like much, but it covered the drilling costs that connected 50 families to clean water. My business improved because I'm no longer spending time on water collection.</p>
+        <h4>— Amara, Small Business Owner • Mali</h4>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"</div>
+        <p>I've tracked my $500 donation from payment to project completion. The transparency is incredible. A functioning well now serves this entire region for years to come.</p>
+        <h4>— Sarah & David, Donors • Canada</h4>
+      </div>
+
+      <div class="testimonial-card testimonial-card-featured">
+        <img src="img/Snapchat-2096862759.jpg" alt="Team of supporters united for clean water mission" class="testimonial-card-image">
+        <p>We saw the need. We chose to act. Together with hundreds of donors, we've funded 47 water projects across three countries. Water that will change lives for generations to come.</p>
+        <h4>— The Impact Team • Global Partners</h4>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- IMPACT STORY -->
+  <section class="impact-story scroll-animate">
+    <div class="impact-content">
+      <img src="img/impact-story.jpg" alt="Local family standing by a new well" class="impact-image">
+      <div class="impact-text">
+        <h2>One Family's Story</h2>
+        <p>In 2023, a new well transformed the village of Kijiji. Maria's children returned to school and the local clinic reported a 70% drop in waterborne illnesses. With reliable water nearby, families spend time on education and work—not fetching unsafe water.</p>
+        <p class="impact-note">Your support funded the well, training, and local maintenance that made this possible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DONATION CALL-TO-ACTION -->
+  <section class="donation-cta">
+    <div class="donation-content">
+      <h2>Help Communities Access Clean Water</h2>
+      <p>Your donation funds wells, maintenance, and community training. Even a small gift makes a measurable difference.</p>
+      <a href="donate.html" class="donate-btn" aria-label="Donate Now">Donate Now</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>CleanWater</h3>
+        <p>Bringing clean water and sanitation to communities in need around the world.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#problem">Our Work</a></li>
+          <li><a href="#solution">Impact</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate.html">Make a Donation</a></li>
+          <li><a href="#">Partner With Us</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 CleanWater. All rights reserved. | 100% of donations fund water projects.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
